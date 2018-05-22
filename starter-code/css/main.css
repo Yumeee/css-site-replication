@@ -8,3 +8,43 @@ body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
 }
+
+.page {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: 40% 60%;
+  padding: 50px;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  grid-column-start: 2;
+}
+
+h1 {
+  grid-row-start: 1;
+  position: absolute;
+  margin: 0px;
+}
+
+h2 {
+  margin: 0px;
+}
+
+.main {
+  grid-row-start: 2;
+}
+
+.product-photo {
+  grid-column-start: 1;
+  max-width: 100%;
+}
+
+.badges {
+  display: inline-block;
+}
+
+.footer {
+  display: inline-block;
+}
